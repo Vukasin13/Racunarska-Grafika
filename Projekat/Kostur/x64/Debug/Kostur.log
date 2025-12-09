@@ -1,13 +1,6 @@
 ﻿  Main.cpp
 V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Main.cpp(57,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Main.cpp(58,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Main.cpp(260,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Main.cpp(381,66): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-  MathUtils.cpp
-  ShapeUtils.cpp
-  TextRenderer.cpp
-  Util.cpp
-V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Util.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Generating Code...
-V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Util.cpp(180,1): warning C4715: 'loadImageToCursor': not all control paths return a value
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Main.cpp(275,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\Source\Main.cpp(402,66): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
   Kostur.vcxproj -> V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat-git\Racunarska-Grafika\Projekat\x64\Debug\Kostur.exe

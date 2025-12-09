@@ -175,6 +175,7 @@ int main()
     glDisableVertexAttribArray(1);
 
     unsigned int mapTexture = loadImageToTexture("../Resources/GTA-put.png");
+    unsigned int mapTexture2 = loadImageToTexture("../Resources/GTA.png");
     unsigned int pinTexture = loadImageToTexture("../Resources/Pin1.png");
     unsigned int signatureTexture = loadImageToTexture("../Resources/potpis2.png");
     unsigned int walkIcon = loadImageToTexture("../Resources/walk.png");
@@ -183,6 +184,7 @@ int main()
     unsigned int plateTexture = loadImageToTexture("../Resources/plate2.png");
     unsigned int resetTexture = loadImageToTexture("../Resources/reset1.png");
     unsigned int gtaHudTexture = loadImageToTexture("../Resources/money.png");
+    bool useSecondMap = false;
 
     unsigned int redTexture;
     glGenTextures(1, &redTexture);
@@ -218,7 +220,7 @@ int main()
         double deltaTime = currentTime - lastTime;
         if (deltaTime < 1.0 / TARGET_FPS) continue;
         lastTime = currentTime;
-
+        
         // F11 Toggle
         static bool f11Pressed = false;
         if (glfwGetKey(window, GLFW_KEY_F11) == GLFW_PRESS) {
@@ -251,6 +253,19 @@ int main()
         }
         else {
             rPressed = false;
+        }
+
+        //M Toggle
+        static bool mPressed = false;
+        if (glfwGetKey(window, GLFW_KEY_M) == GLFW_PRESS) {
+            if (!mPressed) {
+                useSecondMap = !useSecondMap;
+                std::cout << "Promena mape: " << (useSecondMap ? "MAPA 2" : "MAPA 1") << std::endl;
+                mPressed = true;
+            }
+        }
+        else {
+            mPressed = false;
         }
 
         // GLAVNA LOGIKA KRETANJA
@@ -294,7 +309,13 @@ int main()
         float mapVertices[16];
         updateRectangleData(mapVertices, 0.0f, 0.0f, 2.0f, 2.0f, uStart, vStart, zoomLevel, zoomLevel);
         glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(mapVertices), mapVertices);
-        glBindTexture(GL_TEXTURE_2D, mapTexture);
+        
+        if (useSecondMap) {
+            glBindTexture(GL_TEXTURE_2D, mapTexture2);
+        }
+        else {
+            glBindTexture(GL_TEXTURE_2D, mapTexture);
+        }
         glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 
         float uiY = -0.85f;
