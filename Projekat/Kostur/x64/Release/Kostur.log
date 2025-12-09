@@ -1,0 +1,20 @@
+﻿  Main.cpp
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat\Kostur\Source\Main.cpp(120,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat\Kostur\Source\Main.cpp(121,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat\Kostur\Source\Main.cpp(325,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat\Kostur\Source\Main.cpp(437,66): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Util.cpp
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat\Kostur\Source\Util.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Main.obj : error LNK2001: unresolved external symbol __imp_glViewport
+Main.obj : error LNK2001: unresolved external symbol __imp_glClear
+Main.obj : error LNK2001: unresolved external symbol __imp_glBindTexture
+Main.obj : error LNK2001: unresolved external symbol __imp_glGenTextures
+Main.obj : error LNK2001: unresolved external symbol __imp_glEnable
+Main.obj : error LNK2001: unresolved external symbol __imp_glLineWidth
+Main.obj : error LNK2001: unresolved external symbol __imp_glBlendFunc
+Main.obj : error LNK2001: unresolved external symbol __imp_glTexParameteri
+Main.obj : error LNK2001: unresolved external symbol __imp_glClearColor
+Main.obj : error LNK2001: unresolved external symbol __imp_glDrawArrays
+Main.obj : error LNK2001: unresolved external symbol __imp_glTexImage2D
+Util.obj : error LNK2001: unresolved external symbol __imp_glPixelStorei
+V:\Fakultet\Cetvrta godina\Zimski\Racunarska grafika\Projekat\Kostur\x64\Release\Kostur.exe : fatal error LNK1120: 12 unresolved externals
